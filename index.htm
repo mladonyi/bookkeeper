@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ico.jpg">
+
+    <title>bookkeeper</title>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="dist/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<br>
+<br>
+<br>
+
+
+<div class="row">
+    <div class="bg"></div>
+</div>
+
+<div class="row">
+    <div id="navbarja" class="span5">
+        <ul class="nav nav-list">
+            <li class="active"><a href="#">expenses</a></li>
+            <li><a href="#">past records</a></li>
+            <li><a href="#">diagrams</a></li>
+            <li><a href="#">users</a></li>
+            <li><a href="#">settings</a></li>
+            <li><a href="#">logout</a></li>
+        </ul>
+    </div>
+
+    <div id="contentja" class="span11">
+        <div class="container">
+            <div class="input-group">
+                <input type="text" class="form-control"  id="query" name="query" value="">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="jumbotron">
+
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active"><a href="#lastexpenses" data-toggle="tab">last expenses</a></li>
+                    <li><a href="#thismonth" data-toggle="tab">this month</a></li>
+                    <li><a href="#thisyear" data-toggle="tab">this year</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="lastexpenses">
+                        <h1>hier content 1</h1>
+                    </div>
+                    <div class="tab-pane" id="thismonth">
+                        <h1>hier content 2</h1>
+                    </div>
+                    <div class="tab-pane" id="thisyear">
+                        <h1>hier content 3</h1>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    add expense
+                </button>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="myModalLabel">add expense</h4>
+                            </div>
+                            <div class="modal-body">
+                                hier sachen eintragen
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                                <button type="button" class="btn btn-primary">save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('#myTab a:last').tab('show')
+    })
+</script>
+
+</body>
+</html>

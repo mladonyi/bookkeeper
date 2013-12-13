@@ -46,3 +46,12 @@ body {
   padding-bottom: 250px;
   margin-bottom: -10px;
 }
+
+.btn-primary {
+ background: linear-gradient(to bottom, #4c7cb9 1%,#598ccc 100%);
+ width: 150px !important;
+}
+
+.btn-primary:hover {
+background-color: linear-gradient(to bottom, #598ccc 1%,#4c7cb9 100%);
+}
