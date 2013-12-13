@@ -1,0 +1,5 @@
+bg=e2e2e2
+dunkles grau=4b4848
+helles grau=c3c3c3
+dunle schrift=737070
+blau=568dd2
