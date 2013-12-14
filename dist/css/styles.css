@@ -7,6 +7,8 @@ body {
 #navbarja {
  float:left;
  background-color:#c3c3c3;
+ width: 10%;
+ min-width:120px;
 }
 
 #contentja {
@@ -86,7 +88,7 @@ background-color: linear-gradient(to bottom, #598ccc 1%,#4c7cb9 100%);
 }
 
 .btn-add {
-float: right !important;
+ float: right !important;
  height: 35px;
  padding-top:4px;
 }
@@ -99,4 +101,14 @@ float: right !important;
 
 .list-group-item:first-child:hover {
   background-color: #568dd2;
+}
+
+.nav-list {
+ margin-left:5%;
+ padding-left:10%;
+ background-color:#c3c3c3;
+}
+
+.nav-list > li > a:hover {
+ text-align: right;
 }
