@@ -50,6 +50,11 @@ body {
     color:  #ffffff;
 }
 
+.nav-tabs > li > a {
+     color:  #737070;
+     text-align: center;
+}
+
 .contentspace {
  padding-left: 0px !important;
  padding-right: 0px !important;
@@ -64,4 +69,18 @@ body {
 
 .take-all-space-you-can {
     width:100%;
+}
+
+.btn-primary {
+ background: linear-gradient(to bottom, #4c7cb9 1%,#598ccc 100%);
+}
+
+.btn-primary:hover {
+background-color: linear-gradient(to bottom, #598ccc 1%,#4c7cb9 100%);
+}
+
+.btn-add {
+float: right !important;
+ height: 35px;
+ padding-top:4px;
 }

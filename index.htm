@@ -36,61 +36,63 @@
     </div>
 
     <div id="contentja" class="span11">
-        <div class="container">
-            <div class="input-group">
-                <input type="text" class="form-control"  id="query" name="query" value="">
-                <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+
+        <button class="btn btn-primary btn-lg btn-add" id="addexpensebtn" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-plus"></span>  add expense
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">add expense</h4>
+                    </div>
+                    <div class="modal-body">
+                        hier sachen eintragen
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                        <button type="button" class="btn btn-primary">save</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="jumbotron contentspace">
-
-                <ul class="nav nav-tabs" id="myTab">
-                    <li class="active" id="tab1"><a href="#lastexpenses" data-toggle="tab">last expenses</a></li>
-                    <li id="tab2"><a href="#thismonth" data-toggle="tab">this month</a></li>
-                    <li id="tab3"><a href="#thisyear" data-toggle="tab">this year</a></li>
-                </ul>
-
-
-                <div class="tabinhalt">
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="lastexpenses">
-                            <h1>hier content 1</h1>
-                        </div>
-                        <div class="tab-pane" id="thismonth">
-                            <h1>hier content 2</h1>
-                        </div>
-                        <div class="tab-pane" id="thisyear">
-                            <h1>hier content 3</h1>
-                        </div>
+            <div class="container">
+                <div class="input-group">
+                    <input type="text" class="form-control"  id="query" name="query" value="">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                     </div>
+                </div>
+            </div>
 
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                        add expense
-                    </button>
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel">add expense</h4>
-                                </div>
-                                <div class="modal-body">
-                                    hier sachen eintragen
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
-                                    <button type="button" class="btn btn-primary">save</button>
-                                </div>
+            <div class="container">
+                <div class="jumbotron contentspace">
+
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active" id="tab1"><a href="#lastexpenses" data-toggle="tab">last expenses</a></li>
+                        <li id="tab2"><a href="#thismonth" data-toggle="tab">this month</a></li>
+                        <li id="tab3"><a href="#thisyear" data-toggle="tab">this year</a></li>
+                    </ul>
+
+
+                    <div class="tabinhalt">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="lastexpenses">
+                                <h1>hier content 1</h1>
+                            </div>
+                            <div class="tab-pane" id="thismonth">
+                                <h1>hier content 2</h1>
+                            </div>
+                            <div class="tab-pane" id="thisyear">
+                                <h1>hier content 3</h1>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>
