@@ -19,14 +19,15 @@
 <script src="dist/js/jquery-1.10.2.min.js"></script> 
 <script src="dist/js/bootstrap.min.js"></script>    
     
-<!--<div class="container-fluid">-->
 <!-- Header -->
 <div class="row">
     <div class="bg"></div>
 </div>
 
-<!-- Navigation - left -->
-<div class="row">
+<!-- Content below header starts here -->
+<div class="row-fluid">
+    
+    <!-- Navigation - left -->
     <div id="navbarja" class="span5">
         <ul class="nav nav-list">
             <li class="active"><a href="#">expenses</a></li>
@@ -38,11 +39,15 @@
         </ul>
     </div>
 
+    <!-- Content pane -->
     <div id="contentja" class="span11">
-
+        
+        <!-- Button - Add expenses -->
         <button class="btn btn-primary btn-lg btn-add" id="addexpensebtn" data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-plus"></span>  add expense
         </button>
+        
+        <!-- Frame - Add expenses -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -62,6 +67,8 @@
         </div>
 
         <div class="container">
+            
+            <!-- Search bar -->
             <div class="container">
                 <div class="input-group">
                     <input type="text" class="form-control"  id="query" name="query" value="">
@@ -73,7 +80,8 @@
 
             <div class="container">
                 <div class="jumbotron contentspace">
-
+                    
+                    <!-- Navigation expenses -->
                     <ul class="nav nav-tabs" id="myTab">
                         <li class="active" id="tab1"><a href="#lastexpenses" data-toggle="tab">last expenses</a></li>
                         <li id="tab2"><a href="#thismonth" data-toggle="tab">this month</a></li>
@@ -83,12 +91,18 @@
 
                     <div class="tabinhalt">
                         <div class="tab-content">
+                            
+                            <!-- Tab: last expenses -->
                             <div class="tab-pane active" id="lastexpenses">
                                 <h1>hier content 3</h1>
                             </div>
+                            
+                            <!-- Tab: this month -->
                             <div class="tab-pane" id="thismonth">
                                 <h1>hier content 2</h1>
                             </div>
+                            
+                            <!-- Tab: this year -->
                             <div class="tab-pane" id="thisyear">
                                 <div class="list-group">
                                     <a class="list-group-item">Essen</a>
@@ -107,7 +121,7 @@
                                 <div class="list-group">
                                     <a class="list-group-item">Supermarkt</a>
                                     <a href="#" class="list-group-item">
-                                        Aldi
+                                        Hofer
                                         <span class="badge">10€</span>
                                         <span class="badge">14.12.2013</span>
                                     </a>
@@ -151,7 +165,6 @@
     $('#myTab a:last').tab('show')
     })
 </script>
-<!--</div>  container-fluid -->
 
 </body>
 </html>
